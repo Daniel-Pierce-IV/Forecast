@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forecast (Legacy)</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="forecast.css">
+</head>
+<body>
+	<header>
+		<h1>Forecast</h1>
+
+		<div id="unit-toggle">
+			<span>Units: </span>
+			<span id="f" class="selected">F</span>
+			<span> / </span>
+			<span id="c">C</span>
+		</div>
+	</header>
+	
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div id="title" class="col-xs-12 col-md-6">
+				<div id="city-region-country" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h2 class="text-center location">If you can read this, try disabling</h2>
+					</div>
+					<div class="panel-body text-center">
+						<canvas id="icon0" width="48" height="48"></canvas>
+						<h2 class="curCondition">your browser's ad-blocker.</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-md-6">
+				<div id="dayDataGroup-0" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center">Today's Forecast</h4>
+					</div>
+					<div class="panel-body equidistantSpacing">
+						<div class="panel-section">
+							<p class="text-center summary">Clear throughout the day.</p>
+						</div>
+						<div class="panel-section">
+							<p class="text-center sunTimes">
+								Sunrise: 6:01 AM
+								Sunset: 8:28 PM
+							</p>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">58°</h4>
+						<h4 class="tempHigh text-center">80°</h4>
+						<h4 class="precipChance text-right">0%</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-1" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">day, month date</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon1" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-2" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">error</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon2" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-3" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">error</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon3" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-4" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">error</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon4" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-5" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">error</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon5" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-md-4">
+				<div id="dayDataGroup-6" class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h4 class="text-center date">error</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<canvas id="icon6" class="icon" width="128" height="128"></canvas>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<p class="text-center summary">error</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer equidistantSpacing">
+						<h4 class="tempLow text-left">error</h4>
+						<h4 class="tempHigh text-center">error</h4>
+						<h4 class="precipChance text-right">error</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="Skycons/skycons.js"></script>
+	<script src="forecast.js"></script>
+</body>
+</html>

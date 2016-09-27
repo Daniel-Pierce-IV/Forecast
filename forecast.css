@@ -1,0 +1,115 @@
+body{
+	background-color: #333;
+}
+
+header{
+	height: 55px;
+	background-color: #0892D0;
+	box-shadow: 0 3px 5px;
+	z-index: 2;
+}
+
+header h1{
+	color: #fff;
+	padding-left: 10px;
+	margin: 0;
+	display: inline;
+	font-size: 3.5em;
+}
+
+nav{
+	padding: 0 15px 10px 15px;
+}
+
+h4{
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	display: inline;
+}
+
+p{
+	display: block;
+}
+
+span{
+	color: #fff;
+	font-size: 1.8em;
+	display: inline;
+}
+
+.container{
+	background-color: #222;
+	padding-top: 15px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.panel{
+	border-color: #0892D0;
+}
+
+.panel-section{
+	display: inline-block;
+	width: 30%;
+}
+
+.panel-default > .panel-heading{
+	background-image: none;
+	background-color: #0892D0;
+	color: #fff;
+	border: none;
+}
+
+.panel-heading h1{
+	font-weight: bold;
+}
+
+.equidistantSpacing{
+	display: flex;
+	justify-content: space-between;
+}
+
+.tempLow{
+	color: #0892D0;
+}
+
+.tempHigh{
+	color: #FF8700;
+}
+
+.icon{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.selected{
+	color: #FF8700;
+}
+
+#city-region-country > .panel-body{
+	background-image: none;
+	background-color: #0892D0;
+	color: #fff;
+	border: none;
+}
+
+#unit-toggle{
+	margin: 10px;
+	margin-right: 25px;
+	float: right;
+}
+
+#f:hover, #c:hover{
+	cursor: pointer;
+}
+
+#city-region-country .panel-body *{
+	display: inline-block;
+}
+
+#dayDataGroup-0 p{
+	min-height: 60px;
+}
